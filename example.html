@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./src/css/clmaterial.css">
 </head>
     <body>
+       
         <h1>Welcome to CLMaterial!</h1>
         <h1>Forms</h1>
         <form method="POST" action="#">
@@ -131,7 +132,7 @@
         </p>
     </card>
 
-    <!-- card element without margins -->
+     <!-- card element without margins -->
     <card no-margins full>
         <p>Simple card without margins</p>
     </card>
@@ -169,6 +170,22 @@
 
         <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=Image&w=1100&h=300" alt="sign">
     </card>
+
+    <br><br>
+
+        <h1>Modals</h1>
+
+        <!-- Modal -->
+
+        <modal id="modal" style="display : none;">
+                <card>
+                    <p>Simple modal triggered with js</p>
+                    <button onclick="document.querySelector('#modal').style.display = 'none' ">Close</button>
+                </card>
+            </modal>
+        <button center onclick="document.querySelector('#modal').style.display = 'block' ">Show modal</button>
+    
+
 
     <br><br>
     <h1>Headings</h1>
